@@ -1,0 +1,126 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 2793472 bytes for card table expansion
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3331), pid=10108, tid=0x0000000000005154
+#
+# JRE version:  (8.0_171-b11) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.171-b11 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002f09800):  JavaThread "Unknown thread" [_thread_in_vm, id=20820, stack(0x0000000002d60000,0x0000000002e60000)]
+
+Stack: [0x0000000002d60000,0x0000000002e60000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000000002f09800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=20820, stack(0x0000000002d60000,0x0000000002e60000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6b6ee0000 - 0x00007ff6b6f17000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\java.exe
+0x00007ffdadda0000 - 0x00007ffdadf90000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffdac0c0000 - 0x00007ffdac172000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffdab920000 - 0x00007ffdabbc4000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffdac920000 - 0x00007ffdac9c3000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffdac800000 - 0x00007ffdac89e000 	C:\Windows\System32\msvcrt.dll
+0x00007ffdadcc0000 - 0x00007ffdadd57000 	C:\Windows\System32\sechost.dll
+0x00007ffdac200000 - 0x00007ffdac320000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffdabe50000 - 0x00007ffdabfe5000 	C:\Windows\System32\USER32.dll
+0x00007ffdabe20000 - 0x00007ffdabe41000 	C:\Windows\System32\win32u.dll
+0x00007ffdad8f0000 - 0x00007ffdad916000 	C:\Windows\System32\GDI32.dll
+0x00007ffdaad20000 - 0x00007ffdaaeb6000 	C:\Windows\System32\gdi32full.dll
+0x00007ffdaaf90000 - 0x00007ffdab02e000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffdab030000 - 0x00007ffdab12a000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffd925c0000 - 0x00007ffd92844000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.1016_none_9e7a36bbe461dae4\COMCTL32.dll
+0x00007ffdace10000 - 0x00007ffdad145000 	C:\Windows\System32\combase.dll
+0x00007ffdabd70000 - 0x00007ffdabdf0000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffdacde0000 - 0x00007ffdace0e000 	C:\Windows\System32\IMM32.DLL
+0x0000000075070000 - 0x0000000075142000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\msvcr100.dll
+0x00000000747d0000 - 0x0000000075070000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\server\jvm.dll
+0x00007ffdacb20000 - 0x00007ffdacb28000 	C:\Windows\System32\PSAPI.DLL
+0x00007ffda7590000 - 0x00007ffda7599000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x00007ffda4f40000 - 0x00007ffda4f4a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffda8820000 - 0x00007ffda8844000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffdac050000 - 0x00007ffdac0bf000 	C:\Windows\System32\WS2_32.dll
+0x00007ffda81b0000 - 0x00007ffda81dd000 	C:\Windows\SYSTEM32\winmmbase.dll
+0x00007ffdabbd0000 - 0x00007ffdabc1a000 	C:\Windows\System32\cfgmgr32.dll
+0x00000000747c0000 - 0x00000000747cf000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\verify.dll
+0x0000000074790000 - 0x00000000747b9000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\java.dll
+0x0000000074510000 - 0x0000000074545000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\jdwp.dll
+0x0000000074500000 - 0x0000000074508000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\npt.dll
+0x00000000744d0000 - 0x00000000744f3000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\instrument.dll
+0x0000000074770000 - 0x0000000074786000 	C:\Program Files\Java\jdk1.8.0_171\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:58584,suspend=y,server=n -Dvisualvm.id=14727557663200 -XX:+HeapDumpOnOutOfMemoryError -Xms2048m -Xmx2048m -XX:TieredStopAtLevel=1 -Xverify:none -Dspring.output.ansi.enabled=always -Dcom.sun.management.jmxremote -Dspring.jmx.enabled=true -Dspring.liveBeansView.mbeanDomain -Dspring.application.admin.enabled=true -javaagent:C:\Users\Â½Ê·Åà\.IntelliJIdea2019.2\system\captureAgent\debugger-agent.jar -Dfile.encoding=UTF-8 
+java_command: com.lsp.springstudy01.Springstudy01Application
+java_class_path (initial): C:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar;F:\³å´Ì2021\springÔ´Âë½âÎö\springstudy01\target\classes;F:\repository\shop_cloud_repository\org\apache\rocketmq\rocketmq-tools\4.5.1\rocketmq-tools-4.5.1.jar;F:\repository\shop_cloud_repository\org\apache\rocketmq\rocketmq-client\4.5.1\rocketmq-client-4.5.1.jar;F:\repository\shop_cloud_repository\org\apache\rocketmq\rocketmq-common\4.5.1\rocketmq-common-4.5.1.jar;F:\repository\shop_cloud_repository\org\apache\rocketmq\rocketmq-acl\4.5.1\rocketmq-acl-4.5.1.jar;F:\repository\shop_cloud_repository\org\apache\rocketmq\rocketmq-remoting\4.5.1\rocketmq-remoting-4.5.1.jar;F:\repository\shop_cloud_repository\io\netty\netty-all\4.1.48.Final\netty-all
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk1.8.0_171
+CLASSPATH=.;C:\Program Files\Java\jdk1.8.0_171\lib\tools.jar;C:\Program Files\Java\jdk1.8.0_171\lib\dt.jar
+PATH=E:\soft_project\linux\install\xshll\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_171\bin;E:\windowSolf\tuoxinsoft\Maven\MAVEN\apache-maven-3.5.4-bin\apache-maven-3.5.4\bin;E:\windowSolf\;E:\windowSolf\tuoxinsoft\redis-2.4.5-win32-win64\64bit;E:\soft_project\mysql\bin;E:\soft_project\Git\bin;F:\project_soft\nodeJs;F:\project_soft\nodeJs\node_global;F:\project_soft\nodeJs\;F:\project_soft\gradle-4.4-all\gradle-4.4-all\bin;C:\Users\Â½Ê·Åà\AppData\Local\Microsoft\WindowsApps;E:\windowSolf\Microsoft VS Code\bin;E:\soft_project\linux\install\ssh_secure;F:\project_soft\nodeJs\node_global;F:\project_soft\nvm_x64\nvm;F:\project_soft\nvm_x64\nvm\nodeJs;C:\Users\Â½Ê·Åà\AppData\Roaming\npm
+USERNAME=Â½Ê·Åà
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 18362 (10.0.18362.959)
+
+CPU:total 16 (initial active 16) (16 cores per cpu, 1 threads per core) family 23 model 113 stepping 0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, tsc, tscinvbit, tscinv, bmi1
+
+Memory: 4k page, physical 16726324k(7130136k free), swap 18893052k(5468k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.171-b11) for windows-amd64 JRE (1.8.0_171-b11), built on Mar 28 2018 16:06:12 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sat Jan 09 23:10:26 2021
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
